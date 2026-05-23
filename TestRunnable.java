@@ -10,7 +10,9 @@ class MyRunnable implements Runnable{
 public class TestRunnable{
     public static void main(String[] args) {
         MyRunnable mr = new MyRunnable();
-    mr.run();
+        Thread t = new Thread(mr);
+        t.start();
+
 
         
     }
